@@ -1,0 +1,32 @@
+git init -b main
+Initializes a new local Git repository in the current folder and sets the default branch name to main.
+
+git status
+Displays the current branch name, staged changes, unstaged modifications, and untracked files.
+
+git add <file>
+Stages new or modified files in the index so they are included in the next commit snapshot.
+
+git commit -m "message"
+Records the staged snapshot permanently into the local repository history with a descriptive message.
+
+git checkout -b feature
+Creates a new branch named 'feature' from the current commit and switches the working directory to it.
+
+git checkout main
+Switches the active working branch back to the main branch.
+
+git merge feature --no-ff
+Integrates all commits from the 'feature' branch into 'main' while preserving an explicit merge commit.
+
+git log --oneline --graph --decorate --all
+Displays a compact visual commit tree showing all branches, tags, and merge relationships.
+
+git reset --hard HEAD~1
+Undoes the most recent commit by moving HEAD back one commit and resetting both staging and working files.
+
+git remote add origin <url>
+Links the local Git repository to a remote GitHub repository under the alias 'origin'.
+
+git push -u origin --all
+Uploads all local branches and their commit histories to GitHub and sets upstream tracking references.
